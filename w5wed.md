@@ -39,6 +39,38 @@ Hint:
 - Gray to Binary: serial XORS
 - Binary to Gray: parallel XORS
 
+```
+Note: Figured out the pattern in Gray Encoding!
+
+Start with single bit:
+0
+1
+
+Next, "tier up" with an additional bit
+11
+10
+
+Notice how it basically "reversed" back for the non-MSB (1->0)
+
+Now "tier up" and reverse what's been build up so far:
+110
+111
+101
+100
+
+"tier up" and reverse again
+1100
+1101
+1111
+1110
+1010
+1011
+1001
+1000
+
+"tier up" and reverse again... repeat as neccesarry
+```
+
 ---
 
 ### Carry-Lookahead Adder
